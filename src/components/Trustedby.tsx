@@ -1,5 +1,6 @@
 "use client"
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Trustedby() {
   const companies = [
@@ -47,10 +48,12 @@ export default function Trustedby() {
       </motion.h2>
       <div className="flex flex-wrap justify-center items-center gap-8">
         {companies.map((company) => (
-          <img
+          <Image
             key={company.name}
             src={company.logo}
             alt={company.name}
+            width={500}
+            height={500}
             className="h-32 sm:h-36 md:h-40 lg:h-48 w-auto"
           />
         ))}

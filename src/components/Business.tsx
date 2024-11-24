@@ -36,7 +36,7 @@ export default function Business() {
     <div className="flex flex-col lg:flex-row items-start justify-center p-8 bg-gradient-to-br  from-rose-50 to-amber-50 min-h-screen">
       <div className="max-w-xl flex flex-col items-start gap-10 mb-12 lg:mb-0 lg:mr-12">
         <h1 className="text-5xl font-bold mb-6 leading-tight">
-          We're building <br/> business for your <br/> digital economy
+          We are building <br/> business for your <br/> digital economy
         </h1>
         <p className="text-gray-600 mb-8 text-lg">
           Lorem ipsum dolor sit amet, hendrerit omittant mel, es <br/> vidit animal iracundia. Lus te altera essent incorrup. Id <br/> alien accu consetetur em es vidit animal iracundia. Lus <br/> te altera essent incorrup.

@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react"
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react'
+import Image from "next/image"
 
 export default function Component() {
   const [currentReview, setCurrentReview] = useState(0)
@@ -40,10 +41,12 @@ export default function Component() {
         
         <div className="flex flex-col md:flex-row gap-12">
           <div className="w-full md:w-1/2">
-            <img
-              src="/images/reviews.jpg"
+            <Image
+              src={"/images/reviews.jpg"}
               alt="Happy clients"
               className="w-full rounded-3xl shadow-lg mb-8"
+              width={500}
+              height={500}
             />
             <h3 className="text-[36px] font-medium relative  md:top-20 ">
               More than 1,300+ agencies using <br/>TheGem software

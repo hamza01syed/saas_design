@@ -1,14 +1,21 @@
 "use client"
 import { useState } from "react";
 
-const FAQ = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+interface FAQItem {
+  question: string;
+  answer: string;
+}
 
-  const toggleFAQ = (index: any) => {
+const FAQ = () => {
+  // State type is 'number | null' to represent the active FAQ index or null
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  // Function type for 'toggleFAQ' is (index: number)
+  const toggleFAQ = (index: number) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const faqs = [
+  const faqs: FAQItem[] = [
     { question: "How the affiliate program works?", answer: "Lorem ipsum dolor sit amet, hendrerit omittant mel, es vidit animal iracund." },
     { question: "How to create customer panel?", answer: "Lorem ipsum dolor sit amet, hendrerit omittant mel, es vidit animal iracundia." },
     { question: "How delete my account?", answer: "Id alien accus consetetur em es vidit animal iracundia. es vidit animal iracundia" },
